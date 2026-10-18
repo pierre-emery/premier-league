@@ -1,0 +1,43 @@
+# --- Données : jamais dans git (git est pour le code, pas pour le stockage) ---
+data/*
+!data/.gitkeep
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# --- Secrets ---
+.env
+
+# --- Modèles et artefacts (stockés dans le registre W&B) ---
+models/
+*.pkl
+*.joblib
+*.nc
+*.cbm
+*.ubj
+
+# --- Suivi des expériences ---
+wandb/
+mlruns/
+catboost_info/
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.pytest_cache/
+.ruff_cache/
+build/
+dist/
+
+# --- Notebooks ---
+.ipynb_checkpoints/
+
+# --- Blog Quarto ---
+blog/_site/
+blog/.quarto/
+
+# --- Système ---
+.DS_Store
+.vscode/
+.idea/

@@ -1,0 +1,10 @@
+---
+title: "Premier League Predictor"
+listing:
+  contents: posts
+  sort: "date desc"
+  type: default
+---
+
+Prédire les matchs de Premier League : modèles bayésiens contre gradient boosting,
+et ce que ça nous apprend sur l'efficacité des marchés de paris.

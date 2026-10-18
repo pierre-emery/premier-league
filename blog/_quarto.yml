@@ -1,0 +1,20 @@
+# Site Quarto : un article par milestone. Aperçu local : quarto preview blog
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Premier League Predictor"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Articles
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    code-fold: true      # le code est replié par défaut : le récit d'abord
+
+execute:
+  freeze: auto           # ne réexécute un article que si son source change

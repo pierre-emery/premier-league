@@ -1,0 +1,11 @@
+---
+title: "Milestone 1 — Acquisition des données et analyse exploratoire"
+date: 2026-10-18
+draft: true
+---
+
+## D'où viennent les données
+
+## Nettoyage et réconciliation des sources
+
+## Ce que les données nous disent avant toute modélisation
