@@ -1,6 +1,8 @@
 # --- Données : jamais dans git (git est pour le code, pas pour le stockage) ---
-data/*
-!data/.gitkeep
+# On ignore le CONTENU des dossiers (pas les dossiers eux-mêmes), sinon git
+# ne peut pas « dés-ignorer » les .gitkeep qu'ils contiennent.
+data/raw/*
+data/processed/*
 !data/raw/.gitkeep
 !data/processed/.gitkeep
 
@@ -8,7 +10,7 @@ data/*
 .env
 
 # --- Modèles et artefacts (stockés dans le registre W&B) ---
-models/
+/models/              # le « / » initial : seulement à la racine, pas src/plpredict/models/
 *.pkl
 *.joblib
 *.nc
